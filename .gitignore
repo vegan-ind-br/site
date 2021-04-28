@@ -4,6 +4,21 @@
 /.project
 /.settings
 /.vscode
+/.gitignore
+/.github/ISSUE_TEMPLATE
+/.github/CODE_OF_CONDUCT.md
+/.github/CODEOWNERS
+/.github/CONTRIBUTING.md
+/.github/FUNDING.yml
+/.github/PULL_REQUEST_TEMPLATE.md
+/.github/workflows/exakat.yml
+/.github/workflows/stale-issues-safe.yml
+/.github/workflows/stale-issues.yml.disabled
+/.github/workflows/greetings-pr.yml.disabled
+/.gitattributes
+/.gitignore
+/.editorconfig
+/.auth.json
 atlassian*
 /nbproject
 /robots.txt
@@ -15,7 +30,6 @@ atlassian*
 /.idea
 /.gitattributes
 /app/config_sandbox
-/app/etc/config.php
 /app/etc/env.php
 /app/code/Magento/TestModule*
 /lib/internal/flex/uploader/.actionScriptProperties
@@ -58,8 +72,6 @@ atlassian*
 /pub/media/tmp/*
 !/pub/media/tmp/.htaccess
 /pub/media/captcha/*
-/pub/media/sitemap/*
-!/pub/media/sitemap/.htaccess
 /pub/static/*
 !/pub/static/.htaccess
 
