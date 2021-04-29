@@ -16,6 +16,6 @@ jobs:
         username: ${{secrets.SSH_USERNAME}}
         script: |
           cd /var/www/site
-          git pull origin 13.0
+          git pull origin 2.4
           chown -R git /var/www/site
           chmod -R 775 /var/www/site
