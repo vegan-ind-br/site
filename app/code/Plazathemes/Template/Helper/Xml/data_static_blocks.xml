@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<ma_selena>
+    <blocks>
+		
+		<block>
+            <title>Pt Menu Id Cat</title>
+            <identifier>pt_menu_idcat_4_right</identifier>
+            <content>
+				<![CDATA[
+<p><img src="{{media url="wysiwyg/ptidcat.png"}}" alt="" /></p>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Menu Link</title>
+            <identifier>pt_menu_links</identifier>
+            <content>
+				<![CDATA[
+<div class="menu-link">
+<ul>
+<li><a href="{{store url="blog"}}">Blog</a></li>
+<li><a href="{{store url="contact"}}">Contact Us</a></li>
+<li><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy</a></li>
+</ul>
+</div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Contact Map</title>
+            <identifier>contact_map</identifier>
+            <content>
+				<![CDATA[
+<p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d774781.4431526576!2d-102.14621326758693!3d40.663171023783335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8776990919d7f7f9%3A0xc9896e33b10a3c8d!2sRoad+332%2C+Grant%2C+NE+69140%2C+Hoa+K%E1%BB%B3!3m2!1d40.8072002!2d-101.6463716!5e0!3m2!1svi!2s!4v1458726863548" width="100%" height="550" frameborder="0"></iframe></p>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Banner Home Content</title>
+            <identifier>banner-home-content</identifier>
+            <content>
+				<![CDATA[
+<div class="banner-home-content">
+<div class="banner-content row">
+<div class="banner-box banner-box1 col-sm-4 col-md-4 col-sms-12 col-smb-12">
+<div class="banner-box-inner">
+<div class="pull-left"><span class="ion-paper-airplane"></span></div>
+<div class="media-body">
+<h3>Free Shipping<span>Free delivery on all orders over $99</span></h3>
+</div>
+</div>
+</div>
+<div class="banner-box banner-box2 col-sm-4 col-md-4 col-sms-12 col-smb-12">
+<div class="banner-box-inner">
+<div class="pull-left"><span class="ion-social-usd"></span></div>
+<div class="media-body">
+<h3>FREE RETURN<span>30 days money back guarantee!</span></h3>
+</div>
+</div>
+</div>
+<div class="banner-box banner-box3 col-sm-4 col-md-4 col-sms-12 col-smb-12">
+<div class="banner-box-inner">
+<div class="pull-left"><span class="ion-help-buoy"></span></div>
+<div class="media-body">
+<h3>online SUPPORT 24/7<span>We support online 24 hours a day</span></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Us Block</title>
+            <identifier>us_block</identifier>
+            <content>
+				<![CDATA[
+<div class="us_block">
+<div class="group-title1">
+<h2>Why Choose Us</h2>
+</div>
+<form><input id="toggle1" checked="checked" name="tog" type="radio" /> <label class="label1" for="toggle1"><span class="ion-ribbon-b"></span>100% Fresh Organic Foods</label>
+<div id="expand1" class="expand">
+<div class="content">
+<p>This is our motto and we are experts in delivering the best 100% organic foods on the market. We work with more than 60 farms all over the country.Were a locally owned business with staff that has decades of experience in the field of health and firm roots in the health food industry.</p>
+</div>
+</div>
+<input id="toggle2" name="tog" type="radio" /> <label class="label2" for="toggle2"><span class="ion-android-car"></span>Fast Free Delivery</label>
+<div id="expand2" class="expand">
+<div class="content">
+<p>This is our motto and we are experts in delivering the best 100% organic foods on the market. We work with more than 60 farms all over the country.Were a locally owned business with staff that has decades of experience in the field of health and firm roots in the health food industry.</p>
+</div>
+</div>
+<input id="toggle3" name="tog" type="radio" /> <label class="label3" for="toggle3"><span class="ion-university"></span>Rich Experience</label>
+<div id="expand3" class="expand">
+<div class="content">
+<p>This is our motto and we are experts in delivering the best 100% organic foods on the market. We work with more than 60 farms all over the country.Were a locally owned business with staff that has decades of experience in the field of health and firm roots in the health food industry.</p>
+</div>
+</div>
+</form></div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Best Static</title>
+            <identifier>best_static</identifier>
+            <content>
+				<![CDATA[
+<div class="best_static"><a href="{{store url='shop.html'}}"><img src="{{media url="wysiwyg/besell.png"}}" alt="" /></a></div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Banner Block</title>
+            <identifier>banner_block</identifier>
+            <content>
+				<![CDATA[
+<div class="banner-block">
+<div class="row">
+<div class="col-sm-6 col-md-6 col-smb-12">
+<div class="static-box static-box1"><a href="{{store url='features.html'}}"> <img src="{{media url="wysiwyg/block1.png"}}" alt="" /> </a></div>
+</div>
+<div class="col-sm-6 col-md-6 col-smb-12">
+<div class="static-box static-box2"><a href="{{store url='features.html'}}"> <img src="{{media url="wysiwyg/block2.png"}}" alt="" /> </a></div>
+</div>
+</div>
+</div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Footer Static</title>
+            <identifier>footer_static</identifier>
+            <content>
+				<![CDATA[
+<div class="footer-static">
+<div class="row">
+<div class=" col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col1">
+<div class="footer-static-title">
+<h2>Contact Info</h2>
+</div>
+<div class="footer-static-content">
+<div class="foobox">
+<h3>Address:</h3>
+<span>110-114 W George St, City Centre,</span> <span>Glasgow G2 1NF, USA</span></div>
+<div class="foobox">
+<h3>Call Us Now:</h3>
+<span>+0123 - 456 - 78 - 89</span> <span>+0123 - 567 - 78 - 89</span></div>
+<div class="foobox">
+<h3>Email:</h3>
+<span>support@plazathemes.com</span> <span>support@posthemes.com</span></div>
+</div>
+</div>
+</div>
+<div class=" col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col2">
+<div class="footer-static-title">
+<h2>New arrivals</h2>
+</div>
+<div class="footer-static-content">{{block class="Plazathemes\Newproductslider\Block\Newproductslider" name="newproductslider" template="newproductslider.phtml"}}</div>
+</div>
+</div>
+<div class=" col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col3">
+<div class="footer-static-title">
+<h2>TOP RATED PRODUCTS</h2>
+</div>
+<div class="footer-static-content">{{block class="Plazathemes\Recentproductslider\Block\Products" name="Recentproductslider" template="productslider.phtml"}}</div>
+</div>
+</div>
+<div class=" col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col4">
+<div class="footer-static-title">
+<h2>Subscribe To Our Newsletter</h2>
+</div>
+<div class="footer-static-content">{{block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" template="subscribe.phtml"}}</div>
+</div>
+</div>
+</div>
+</div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>	
+		<block>
+            <title>Footer Payment</title>
+            <identifier>footer_payment</identifier>
+            <content>
+				<![CDATA[
+<div class="payment"><img src="{{media url="wysiwyg/payments.png"}}" alt="" /></div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Banner Left</title>
+            <identifier>banner_left</identifier>
+            <content>
+				<![CDATA[
+<div class="banner_left"><img src="{{media url="wysiwyg/banner-left.png"}}" alt="" /></div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Banner Block H2</title>
+            <identifier>banner_block_h2</identifier>
+            <content>
+				<![CDATA[
+<div class="banner-block">
+<div class="boxleft">
+<div class="static-box static-box1"><a href="{{store url='features.html'}}"><img src="{{media url="wysiwyg/box-h2-1.png"}}" alt="" /></a></div>
+</div>
+<div class="boxright">
+<div class="static-box static-box2"><a href="{{store url='features.html'}}"><img src="{{media url="wysiwyg/box-h2-2.png"}}" alt="" /></a></div>
+</div>
+</div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Best Static h2</title>
+            <identifier>best_static_h2</identifier>
+            <content>
+				<![CDATA[
+<div class="best_static"><a href="{{store url='shop.html'}}"><img src="{{media url="wysiwyg/best-static-h2.jpg"}}" alt="" /></a></div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Header Static</title>
+            <identifier>header_static</identifier>
+            <content>
+				<![CDATA[
+<div class="header_static"><span>Week Days: 08:00am-7:30pm</span></div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Footer Statich3</title>
+            <identifier>footer_statich3</identifier>
+            <content>
+				<![CDATA[
+<div class="footer-static">
+<div class="row">
+<div class=" col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col1">
+<div class="footer-static-title">
+<h2>Contact Info</h2>
+</div>
+<div class="footer-static-content">
+<div class="foobox">
+<h3>Address:</h3>
+<span>110-114 W George St, City Centre,</span> <span>Glasgow G2 1NF, USA</span></div>
+<div class="foobox">
+<h3>Call Us Now:</h3>
+<span>+0123 - 456 - 78 - 89</span> <span>+0123 - 567 - 78 - 89</span></div>
+<div class="foobox">
+<h3>Email:</h3>
+<span>support@plazathemes.com</span> <span>support@posthemes.com</span></div>
+</div>
+</div>
+</div>
+<div class=" col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col2">
+<div class="footer-static-title">
+<h2>INFORMATION</h2>
+</div>
+<div class="footer-static-content">
+<ul>
+<li><a>Contact Page</a></li>
+<li><a>Checkout</a></li>
+<li><a>My Cart</a></li>
+<li><a>Featured Products</a></li>
+<li><a>Popular Products</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=" col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col3">
+<div class="footer-static-title">
+<h2>TOP RATED PRODUCTS</h2>
+</div>
+<div class="footer-static-content">
+<ul>
+<li><a>Help &amp; Contact</a></li>
+<li><a>Shipping &amp; Taxes</a></li>
+<li><a>Return Policy</a></li>
+<li><a>Careers</a></li>
+<li><a>Affiliates</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class=" col-md-3 col-sm-6 col-sms-6 col-smb-12">
+<div class="f-col f-col4">
+<div class="footer-static-title">
+<h2>Subscribe To Our Newsletter</h2>
+</div>
+<div class="footer-static-content">{{block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" template="subscribe.phtml"}}</div>
+</div>
+</div>
+</div>
+</div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Banner Block H3</title>
+            <identifier>banner_block_h3</identifier>
+            <content>
+				<![CDATA[
+<div class="banner-block">
+<div class="boxleft">
+<div class="static-box static-box1"><a href="{{store url='features.html'}}"><img src="{{media url="wysiwyg/st1.png"}}" alt="" /></a></div>
+</div>
+<div class="boxright">
+<div class="static-box static-box2"><a href="{{store url='features.html'}}"><img src="{{media url="wysiwyg/st2.png"}}" alt="" /></a></div>
+</div>
+</div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Header Phone</title>
+            <identifier>header_phone</identifier>
+            <content>
+				<![CDATA[
+<div class="header_phone"><span class="ion-ios-telephone-outline">Call us now:</span><span> +0123 456 78 89</span></div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Banner Block H4</title>
+            <identifier>banner_block_h4</identifier>
+            <content>
+				<![CDATA[
+<div class="banner-block">
+<div class="boxleft">
+<div class="static-box static-box1"><a href="{{store url='features.html'}}"><img src="{{media url="wysiwyg/imgblock1.png"}}" alt="" /></a></div>
+<div class="static-box static-box2"><a href="{{store url='features.html'}}"><img src="{{media url="wysiwyg/imgblock2.png"}}" alt="" /></a></div>
+</div>
+<div class="boxright">
+<div class="static-box static-box3"><a href="{{store url='features.html'}}"><img src="{{media url="wysiwyg/imgblock3.png"}}" alt="" /></a></div>
+<div class="static-box static-box4"><a href="{{store url='features.html'}}"><img src="{{media url="wysiwyg/imgblock4.png"}}" alt="" /></a></div>
+</div>
+</div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+		<block>
+            <title>Block Bottom</title>
+            <identifier>block_bottom</identifier>
+            <content>
+				<![CDATA[
+<div class="banner-block">
+<div class="static-box static-box1"><img src="{{media url="wysiwyg/block-static.jpg"}}" alt="" />
+<div class="text-des">
+<h3><span>You Source For Whole - Food</span><span>Clean - Label Nutrition</span></h3>
+<a href="{{store url='shop.html'}}">Learn More</a></div>
+</div>
+</div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+    </blocks>
+</ma_selena>
