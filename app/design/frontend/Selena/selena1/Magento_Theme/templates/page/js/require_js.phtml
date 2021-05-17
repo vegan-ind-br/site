@@ -1,12 +1,11 @@
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
+ * Copyright © 2015 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
 ?>
 <script>
-    var BASE_URL = '<?= $block->escapeUrl($block->getBaseUrl()) ?>';
     var require = {
-        "baseUrl": "<?= $block->escapeUrl($block->getViewFileUrl('/')) ?>"
+        "baseUrl": "<?php /* @escapeNotVerified */ echo $block->getViewFileUrl('/') ?>"
     };
 </script>

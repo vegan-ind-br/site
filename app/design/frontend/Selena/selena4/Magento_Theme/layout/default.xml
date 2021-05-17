@@ -70,7 +70,6 @@
                     <arguments>
                         <argument name="title" translate="true" xsi:type="string">Menu</argument>
                     </arguments>
-                     <block class="Magento\Theme\Block\Html\Topmenu" name="catalog.topnav" template="Magento_Theme::html/topmenu.phtml" ttl="3600" before="-"/>
                 </block>
                 <block class="Magento\Framework\View\Element\Text" name="store.links" group="navigation-sections">
                     <arguments>
@@ -83,20 +82,18 @@
                     <arguments>
                         <argument name="title" translate="true" xsi:type="string">Settings</argument>
                     </arguments>
-                    <block class="Magento\Store\Block\Switcher" name="store.settings.language" template="Magento_Store::switch/languages.phtml">
+                    <block class="Magento\Store\Block\Switcher" name="store.settings.language" template="switch/languages.phtml">
                         <arguments>
                             <argument name="id_modifier" xsi:type="string">nav</argument>
-                            <argument name="view_model" xsi:type="object">Magento\Store\ViewModel\SwitcherUrlProvider</argument>
                         </arguments>
                     </block>
-                    <block class="Magento\Directory\Block\Currency" name="store.settings.currency" template="Magento_Directory::currency.phtml">
+                    <block class="Magento\Directory\Block\Currency" name="store.settings.currency" before="store_language" template="currency.phtml">
                         <arguments>
                             <argument name="id_modifier" xsi:type="string">nav</argument>
                         </arguments>
                     </block>
                 </block>
             </block>
-            <block class="Magento\Theme\Block\Html\Breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
         </referenceContainer>
 
 		<referenceContainer name="footer-container">
