@@ -15,11 +15,7 @@ return [
     ],
     'db' => [
         'table_prefix' => '',
-        'connection' => [
-            'default' => [
-                'initStatements' => 'SET NAMES utf8; SET @@local.sql_require_primary_key = OFF;'
-            ]
-        ],
+        'connection' => [],
     ],
     'resource' => [],
     'x-frame-options' => 'SAMEORIGIN',
