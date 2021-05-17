@@ -1,0 +1,30 @@
+<div class="banner-home">
+	<div class="banner-slider">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('bannerslider.phtml')->toHtml();?> 
+	</div>
+	<div class="home-wr">
+		<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_block_h4')->toHtml();?>
+		<div class="bg-block">
+			<div class="container">
+				<div class="block-home-content">
+					<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner-home-content')->toHtml();?>
+				</div>
+			</div>		
+		</div>		
+	</div>
+	<div class="container">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Pricecountdown\Block\Pricecountdown')->setTemplate('saleslider.phtml')->toHtml();?> 
+	</div>
+	<div class="us-tes">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('us_block')->toHtml();?>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Testimonial\Block\Testimonial')->setTemplate('testimonial.phtml')->toHtml();?> 
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>

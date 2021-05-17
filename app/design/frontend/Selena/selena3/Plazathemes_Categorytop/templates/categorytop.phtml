@@ -1,0 +1,80 @@
+<?php  
+	$items = $block->getConfig('items');
+	$itemsDefault = $block->getConfig('itemsDefault');
+	$itemsDesktop = $block->getConfig('itemsDesktop'); 
+	$itemsDesktopSmall = $block->getConfig('itemsDesktopSmall');
+	$itemsTablet = $block->getConfig('itemsTablet');
+	$itemsMobile = $block->getConfig('itemsMobile');
+	$speed = $block->getConfig('speed');
+	$show_navigation = $block->getConfig('navigation');
+	$show_pagination = $block->getConfig('pagination'); 
+	$auto = $block->getConfig('auto');
+?>
+<div class="pt_categorytop catlist">
+<div class="container">
+	<div class="group-title1"><h2><?php echo 'Popular Categories'; ?></h2></div>
+	<div class="owl-container">
+	<div class="categorytop_slider">
+		<?php
+		$catListTop = $block->getCatListTop();
+		$i = 0;
+		$last = count($catListTop);
+		foreach ($catListTop as $catTop) {
+			//echo "<pre>"; print_r($catTop->getData()); echo "</pre>"; 
+			$thumb_url = $block -> getThumbUrl($catTop->getThumbPopular());
+			$thumb_hover_url = $block -> getThumbUrl($catTop->getThumbNailHover());
+			if($i < $last){
+				echo '<div class="catgrid">';
+			}else {
+				echo '<div class="catgrid last">';
+			}
+			$link = $block->getCategoryLink($catTop);
+					echo '<div class="catlist_level_top item">
+								
+								<div class="catlist-content">
+								<div class="cat-images"><a href="'.$link.'">' 
+									.'<img class="tnail" src="'.$thumb_url.'" alt="'.$catTop->getName().'" />
+									<img class="tnail-hover" src="'.$thumb_hover_url.'" alt="'.$catTop->getName().'" />
+									<div class="des-cat"><h3>'.$catTop->getName().'</h3></div>
+								</a></div>';
+					$CatList = $block->getCatByPath((int) $catTop->getId(), $catTop->getPath());
+					$j = 0;
+					echo '<ul>';
+						foreach ($CatList as $cat) {
+							$link_child = $block->getCategoryLink($cat);
+						  if($j >= 5) break;
+							echo '<li><a href="'.$link_child.'">'.$cat->getName().'</a></li>';
+							$j++;
+						}
+						echo '<li class="link-category"><a href="'.$link.'">See more</a></li>';
+					echo '</ul></div></div></div>';
+			$j++; 
+		}
+		?>
+	</div>
+	</div>
+</div>
+</div>
+<script type="text/javascript">
+require([
+  "jquery",
+  "owlcarousel/minjs"
+ ], function($,owlCarousel){
+	
+   $(".pt_categorytop .categorytop_slider").owlCarousel({
+		autoPlay : <?php if($auto) echo 'true'; else echo 'false'; ?>,
+		slideSpeed : <?php if($speed) echo $speed; else echo '500'; ?>,
+		navigation : <?php if($show_navigation) echo 'true'; else echo 'false'; ?>,
+		stopOnHover : true,
+		pagination : <?php if($show_pagination) echo 'true'; else echo 'false'; ?>,
+		items : <?php if($itemsDefault) echo $itemsDefault; else echo '4'; ?>,
+		itemsDesktop : [1400,<?php if($itemsDesktop) echo $itemsDesktop; else echo '4'; ?>],
+		itemsDesktopSmall : [992,<?php if($itemsDesktopSmall) echo $itemsDesktopSmall; else echo '3'; ?>],
+		itemsTablet: [767,<?php if($itemsTablet) echo $itemsTablet; else echo '2'; ?>],
+		itemsMobile : [479,<?php if($itemsMobile) echo $itemsMobile; else echo '1'; ?>],
+		addClassActive : true,
+		scrollPerPage:false
+   });
+   
+});
+</script>   

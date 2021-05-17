@@ -1,0 +1,73 @@
+<?php  
+	$items = $block->getConfig('items');
+	$itemsDefault = $block->getConfig('itemsDefault');
+	$itemsDesktop = $block->getConfig('itemsDesktop'); 
+	$itemsDesktopSmall = $block->getConfig('itemsDesktopSmall');
+	$itemsTablet = $block->getConfig('itemsTablet');
+	$itemsMobile = $block->getConfig('itemsMobile');
+	$speed = $block->getConfig('speed');
+	$show_navigation = $block->getConfig('navigation');
+	$show_pagination = $block->getConfig('pagination'); 
+	$auto = $block->getConfig('auto');
+?>
+<div class="pt_categorytop catlist">
+	<h2 class="title"><?php echo 'Category Popular'; ?></h2>
+	 
+	<?php
+
+	$catListTop = $block->getCatListTop();
+
+	$i = 0;
+	$last = count($catListTop);
+	foreach ($catListTop as $catTop) {
+		//echo "<pre>"; print_r($catTop->getData()); echo "</pre>"; 
+		$thumb_url = $block -> getThumbUrl($catTop->getThumbPopular());
+		if($i < $last) echo '<div class="catgrid">';
+		else echo '<div class="catgrid last">';
+
+	    	echo '<div class="catlist_level_top">
+						<a href="#">' 
+		                    .'<img src="'.$thumb_url.'" alt="'.$catTop->getName().'" />
+		                </a><h3>'
+		                .$catTop->getName()
+		                .'</h3></div>';
+
+	   
+	    $CatList = $block->getCatByPath((int) $catTop->getId(), $catTop->getPath());
+	    
+	    $j = 0;
+	    echo '<ul>';
+	    foreach ($CatList as $cat) {
+	      if($j >= 5) break;
+	        echo '<li><a href="#">'.$cat->getName().'</a></li>';
+	        $j++;
+	    }
+	    echo '</ul></div>';
+	    $j++; 
+	}
+	?>
+
+</div>
+<script type="text/javascript">
+require([
+  "jquery",
+  "owlcarousel/minjs"
+ ], function($,owlCarousel){
+	
+   $(".pt_categorytop .row").owlCarousel({
+		autoPlay : <?php if($auto) echo 'true'; else echo 'false'; ?>,
+		slideSpeed : <?php if($speed) echo $speed; else echo '500'; ?>,
+		navigation : <?php if($show_navigation) echo 'true'; else echo 'false'; ?>,
+		stopOnHover : true,
+		pagination : <?php if($show_pagination) echo 'true'; else echo 'false'; ?>,
+		items : <?php if($itemsDefault) echo $itemsDefault; else echo '4'; ?>,
+		itemsDesktop : [1199,<?php if($itemsDesktop) echo $itemsDesktop; else echo '4'; ?>],
+		itemsDesktopSmall : [992,<?php if($itemsDesktopSmall) echo $itemsDesktopSmall; else echo '3'; ?>],
+		itemsTablet: [767,<?php if($itemsTablet) echo $itemsTablet; else echo '2'; ?>],
+		itemsMobile : [479,<?php if($itemsMobile) echo $itemsMobile; else echo '1'; ?>],
+		addClassActive : true,
+		scrollPerPage:false
+   });
+   
+});
+</script>   

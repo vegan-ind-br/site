@@ -1,0 +1,108 @@
+<?xml version="1.0" standalone="yes"?>  
+<bannerslider>
+<records>
+
+	<record> 
+		<name>Great offers</name>
+		<title1>on fruits</title1>
+		<title2>and vegetables</title2>
+		<click_url>#</click_url>
+		<image><![CDATA[Plazathemes/bannerslider/images/s/l/slider1.png]]></image>
+		<image_alt><![CDATA[]]></image_alt>
+		<description>We supply highly quality, premium organic products</description>
+		<order>0</order>
+		<store_id>1</store_id> 
+		<status>1</status> 
+	</record>
+	<record> 
+		<name>tasty healthy</name>
+		<title1>organic</title1>
+		<title2>we sell what's<span>good for you</span></title2>
+		<click_url>#</click_url>
+		<image><![CDATA[Plazathemes/bannerslider/images/s/l/slider2.png]]></image>
+		<image_alt><![CDATA[]]></image_alt>
+		<description></description>
+		<order>0</order>
+		<store_id>1</store_id> 
+		<status>1</status> 
+	</record>
+
+	<record> 
+		<name>Fresh Organic Food</name>
+		<title1></title1>
+		<title2></title2>
+		<click_url>#</click_url>
+		<image><![CDATA[Plazathemes/bannerslider/images/s/l/slider2.jpg]]></image>
+		<image_alt><![CDATA[]]></image_alt>
+		<description><span>We enable people to enjoy locally grown eco-friendly and healthy</span>
+<span> foods that are reasonably priced and conveniently delivered.</span></description>
+		<order>0</order>
+		<store_id>3</store_id> 
+		<status>1</status> 
+	</record>
+	<record> 
+		<name>Fresh From The Farm</name>
+		<title1></title1>
+		<title2></title2>
+		<click_url>#</click_url>
+		<image><![CDATA[Plazathemes/bannerslider/images/s/l/slider1.jpg]]></image>
+		<image_alt><![CDATA[]]></image_alt>
+		<description><span>We deliver organic fruits and vegetables fresh </span>
+<span>from our fields to your doorstep</span></description>
+		<order>0</order>
+		<store_id>3</store_id> 
+		<status>1</status> 
+	</record>
+
+	<record> 
+		<name>For Fresh Vegetables</name>
+		<title1>Plan To Place Your Order on</title1>
+		<title2>Monday or Friday</title2>
+		<click_url>#</click_url>
+		<image><![CDATA[Plazathemes/bannerslider/images/s/l/slider1_1.jpg]]></image>
+		<image_alt><![CDATA[]]></image_alt>
+		<description></description>
+		<order>0</order>
+		<store_id>4</store_id> 
+		<status>1</status> 
+	</record>
+	<record> 
+		<name>Healthy Habits:</name>
+		<title1>Daily Dose of Fruits</title1>
+		<title2>and Vegetables</title2>
+		<click_url>#</click_url>
+		<image><![CDATA[Plazathemes/bannerslider/images/s/l/slider2_1.jpg]]></image>
+		<image_alt><![CDATA[]]></image_alt>
+		<description></description>
+		<order>0</order>
+		<store_id>4</store_id> 
+		<status>1</status> 
+	</record>
+	
+	<record> 
+		<name>Wellcome To Selena Farm</name>
+		<title1></title1>
+		<title2></title2>
+		<click_url>#</click_url>
+		<image><![CDATA[Plazathemes/bannerslider/images/s/l/slider1_2.jpg]]></image>
+		<image_alt><![CDATA[]]></image_alt>
+		<description>We Provide You With Fresh Local Products.</description>
+		<order>0</order>
+		<store_id>5</store_id> 
+		<status>1</status> 
+	</record>
+	<record> 
+		<name>Fresh Fruits and Vegetables</name>
+		<title1></title1>
+		<title2></title2>
+		<click_url>#</click_url>
+		<image><![CDATA[Plazathemes/bannerslider/images/s/l/slider2_2.jpg]]></image>
+		<image_alt><![CDATA[]]></image_alt>
+		<description>Shop Selena Quality Foods</description>
+		<order>0</order>
+		<store_id>5</store_id> 
+		<status>1</status> 
+	</record>
+
+</records>
+</bannerslider>

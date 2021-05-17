@@ -1,0 +1,24 @@
+<div class="block-group box-section">
+	<div class="best_block">
+		<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_block_h2')->toHtml();?>
+		<div class="container">
+			<div class="our_products">
+				<div class="group-title1"><h2>Bestseller Products</h2></div>
+				<div class="row">
+					<div class="col-md-8 col-sm-12 col-xs-12">
+						<?php echo $block->getLayout()->createBlock('Plazathemes\Bestsellerproduct\Block\Bestsellerproduct')->setTemplate('bestsellerproduct.phtml')->toHtml();?> 					
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('best_static_h2')->toHtml();?>				
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="blog-slider">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Blog\Block\Sidebar\Recent')->setTemplate('sidebar/slider.phtml')->toHtml();?> 
+	</div>
+	<div class="brand-slider">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Brandslider\Block\Brandslider')->setTemplate('brandslider.phtml')->toHtml();?> 
+	</div>
+</div>

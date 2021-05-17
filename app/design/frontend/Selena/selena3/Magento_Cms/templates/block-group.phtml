@@ -1,0 +1,41 @@
+<div class="block-group box-section">
+	<div class="us-tes">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('us_block')->toHtml();?>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Testimonial\Block\Testimonial')->setTemplate('testimonial.phtml')->toHtml();?> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="best_block">
+		<div class="cat_top">		
+			<?php echo $block->getLayout()->createBlock('Plazathemes\Categorytop\Block\Categorytop')->setTemplate('categorytop.phtml')->toHtml();?>
+		</div>	
+		<div class="container">
+			<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_block')->toHtml();?>	
+			<div class="line_bot">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<?php echo $block->getLayout()->createBlock('Plazathemes\Bestsellerproduct\Block\Bestsellerproduct')->setTemplate('bestsellerproduct.phtml')->toHtml();?> 
+					</div>
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<?php echo $block->getLayout()->createBlock('Plazathemes\Newproductslider\Block\Newproductslider')->setTemplate('newproductslider.phtml')->toHtml();?> 
+					</div>	
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<?php echo $block->getLayout()->createBlock('Plazathemes\Recentproductslider\Block\Products')->setTemplate('productslider.phtml')->toHtml();?> 
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<div class="blog-slider">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Blog\Block\Sidebar\Recent')->setTemplate('sidebar/slider.phtml')->toHtml();?> 
+	</div>
+	<div class="brand-slider">
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Brandslider\Block\Brandslider')->setTemplate('brandslider.phtml')->toHtml();?> 
+	</div>
+</div>

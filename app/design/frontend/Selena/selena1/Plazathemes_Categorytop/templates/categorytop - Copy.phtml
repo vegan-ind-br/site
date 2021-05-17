@@ -1,0 +1,41 @@
+<div class="pt_categorytop catlist">
+	<div class="group-title1"><h2><?php echo 'Featured Categories'; ?></h2></div>
+	<div class="row">
+		<?php
+		$catListTop = $block->getCatListTop();
+		$i = 0;
+		$last = count($catListTop);
+		foreach ($catListTop as $catTop) {
+			//echo "<pre>"; print_r($catTop->getData()); echo "</pre>"; 
+			$thumb_url = $block -> getThumbUrl($catTop->getThumbPopular());
+			$thumb_hover_url = $block -> getThumbUrl($catTop->getThumbNailHover());
+			if($i < $last){
+				echo '<div class="catgrid">';
+			}else {
+				echo '<div class="catgrid last">';
+			}
+			$link = $block->getCategoryLink($catTop);
+					echo '<div class="catlist_level_top item">
+								
+								<div class="catlist-content">
+								<div class="cat-images"><a href="'.$link.'">' 
+									.'<img class="tnail" src="'.$thumb_url.'" alt="'.$catTop->getName().'" />
+									<img class="tnail-hover" src="'.$thumb_hover_url.'" alt="'.$catTop->getName().'" />
+									<h3>'.$catTop->getName().'</h3>
+								</a></div>';
+					$CatList = $block->getCatByPath((int) $catTop->getId(), $catTop->getPath());
+					$j = 0;
+					echo '<ul>';
+						foreach ($CatList as $cat) {
+							$link_child = $block->getCategoryLink($cat);
+						  if($j >= 5) break;
+							echo '<li><a href="'.$link_child.'">'.$cat->getName().'</a></li>';
+							$j++;
+						}
+						echo '<li class="link-category"><a href="'.$link.'">See more</a></li>';
+					echo '</ul></div></div></div>';
+			$j++; 
+		}
+		?>
+	</div>
+</div>
