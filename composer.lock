@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9bc433740520119db84253a54d67a303",
+    "content-hash": "7cc4c418b1ee39d3b5dcbbb1b05593d1",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -4609,6 +4609,59 @@
             "time": "2020-03-23T09:12:05+00:00"
         },
         {
+            "name": "rafaelstz/traducao_magento2_pt_br",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rafaelstz/traducao_magento2_pt_br.git",
+                "reference": "927f580c4f0c1a73fdb90ae62f510d4c384cc2ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rafaelstz/traducao_magento2_pt_br/zipball/927f580c4f0c1a73fdb90ae62f510d4c384cc2ef",
+                "reference": "927f580c4f0c1a73fdb90ae62f510d4c384cc2ef",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "magento2-language",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rafael Corrêa Gomes",
+                    "homepage": "https://github.com/rafaelstz"
+                },
+                {
+                    "name": "Magento official translations project for Magento 2",
+                    "homepage": "https://crowdin.com/project/magento-2"
+                }
+            ],
+            "description": "Tradução Magento 2 para Português do Brasil oficial da Magento ",
+            "homepage": "https://github.com/rafaelstz/traducao_magento2_pt_br",
+            "support": {
+                "issues": "https://github.com/rafaelstz/traducao_magento2_pt_br/issues",
+                "source": "https://github.com/rafaelstz/traducao_magento2_pt_br/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/rafaelcg",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/rafaelstz",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-02-24T00:43:56+00:00"
+        },
+        {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "source": {
@@ -6125,6 +6178,60 @@
                 "yui"
             ],
             "time": "2018-01-15T15:26:51+00:00"
+        },
+        {
+            "name": "twilio/sdk",
+            "version": "6.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twilio/twilio-php.git",
+                "reference": "4e69cc175512db9ef07e87e92c124aefa4d01360"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/4e69cc175512db9ef07e87e92c124aefa4d01360",
+                "reference": "4e69cc175512db9ef07e87e92c124aefa4d01360",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^6.3 || ^7.0",
+                "phpunit/phpunit": ">=4.5",
+                "theseer/phpdox": "^0.12.0"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "An HTTP client to execute the API requests"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Twilio\\": "src/Twilio/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Twilio API Team",
+                    "email": "api@twilio.com"
+                }
+            ],
+            "description": "A PHP wrapper for Twilio's API",
+            "homepage": "http://github.com/twilio/twilio-php",
+            "keywords": [
+                "api",
+                "sms",
+                "twilio"
+            ],
+            "support": {
+                "issues": "https://github.com/twilio/twilio-php/issues",
+                "source": "https://github.com/twilio/twilio-php/tree/6.23.0"
+            },
+            "time": "2021-05-05T19:15:04+00:00"
         },
         {
             "name": "webimpress/safe-writer",
@@ -12030,7 +12137,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "rafaelstz/traducao_magento2_pt_br": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
@@ -12053,5 +12162,5 @@
         "lib-libxml": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }

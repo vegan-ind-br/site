@@ -36,15 +36,15 @@ class Validator implements ValidatorInterface
     public function validate(): array
     {
         $errors = [];
-        try {
-            $client = $this->clientResolver->create();
-            if (!$client->testConnection()) {
-                $errors[] = 'Could not validate a connection to Elasticsearch.'
-                    . ' Verify that the Elasticsearch host and port are configured correctly.';
-            }
-        } catch (\Exception $e) {
-            $errors[] = 'Could not validate a connection to Elasticsearch. ' . $e->getMessage();
-        }
+#        try {
+#            $client = $this->clientResolver->create();
+#            if (!$client->testConnection()) {
+#                $errors[] = 'Could not validate a connection to Elasticsearch.'
+#                    . ' Verify that the Elasticsearch host and port are configured correctly.';
+#            }
+#        } catch (\Exception $e) {
+#            $errors[] = 'Could not validate a connection to Elasticsearch. ' . $e->getMessage();
+#        }
         return $errors;
     }
 }

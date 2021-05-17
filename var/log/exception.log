@@ -1,0 +1,1 @@
+[2021-05-07 19:36:56] main.CRITICAL: Indexer handler is not available: elasticsearch7 {"exception":"[object] (LogicException(code: 0): Indexer handler is not available: elasticsearch7 at /var/www/site/app/code/Magento/CatalogSearch/Model/Indexer/IndexerHandlerFactory.php:79)"} []
