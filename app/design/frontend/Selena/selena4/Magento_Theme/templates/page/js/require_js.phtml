@@ -1,11 +1,21 @@
 <?php
 /**
+<<<<<<< HEAD
  * Copyright © 2015 Magento. All rights reserved.
+=======
+ * Copyright © Magento, Inc. All rights reserved.
+>>>>>>> be060a920611899237d0ce2f0469d025878d9adf
  * See COPYING.txt for license details.
  */
 ?>
 <script>
+<<<<<<< HEAD
     var require = {
         "baseUrl": "<?php /* @escapeNotVerified */ echo $block->getViewFileUrl('/') ?>"
+=======
+    var BASE_URL = '<?= $block->escapeUrl($block->getBaseUrl()) ?>';
+    var require = {
+        "baseUrl": "<?= $block->escapeUrl($block->getViewFileUrl('/')) ?>"
+>>>>>>> be060a920611899237d0ce2f0469d025878d9adf
     };
 </script>

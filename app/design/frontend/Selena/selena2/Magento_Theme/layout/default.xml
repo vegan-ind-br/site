@@ -70,6 +70,10 @@
                     <arguments>
                         <argument name="title" translate="true" xsi:type="string">Menu</argument>
                     </arguments>
+<<<<<<< HEAD
+=======
+                     <block class="Magento\Theme\Block\Html\Topmenu" name="catalog.topnav" template="Magento_Theme::html/topmenu.phtml" ttl="3600" before="-"/>
+>>>>>>> be060a920611899237d0ce2f0469d025878d9adf
                 </block>
                 <block class="Magento\Framework\View\Element\Text" name="store.links" group="navigation-sections">
                     <arguments>
@@ -82,18 +86,32 @@
                     <arguments>
                         <argument name="title" translate="true" xsi:type="string">Settings</argument>
                     </arguments>
+<<<<<<< HEAD
                     <block class="Magento\Store\Block\Switcher" name="store.settings.language" template="switch/languages.phtml">
                         <arguments>
                             <argument name="id_modifier" xsi:type="string">nav</argument>
                         </arguments>
                     </block>
                     <block class="Magento\Directory\Block\Currency" name="store.settings.currency" before="store_language" template="currency.phtml">
+=======
+                    <block class="Magento\Store\Block\Switcher" name="store.settings.language" template="Magento_Store::switch/languages.phtml">
+                        <arguments>
+                            <argument name="id_modifier" xsi:type="string">nav</argument>
+                            <argument name="view_model" xsi:type="object">Magento\Store\ViewModel\SwitcherUrlProvider</argument>
+                        </arguments>
+                    </block>
+                    <block class="Magento\Directory\Block\Currency" name="store.settings.currency" template="Magento_Directory::currency.phtml">
+>>>>>>> be060a920611899237d0ce2f0469d025878d9adf
                         <arguments>
                             <argument name="id_modifier" xsi:type="string">nav</argument>
                         </arguments>
                     </block>
                 </block>
             </block>
+<<<<<<< HEAD
+=======
+            <block class="Magento\Theme\Block\Html\Breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
+>>>>>>> be060a920611899237d0ce2f0469d025878d9adf
         </referenceContainer>
 
 		<referenceContainer name="footer-container">
