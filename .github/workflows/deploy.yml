@@ -16,6 +16,7 @@ jobs:
         username: ${{secrets.SSH_USERNAME}}
         script: |
           cd /var/www/site
+          git reset --hard
           git pull origin 2.4
           chown -R git /var/www/site
           chmod -R 775 /var/www/site
