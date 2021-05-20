@@ -226,7 +226,7 @@ class Processor
      */
     public function process503()
     {
-        $this->pageTitle = 'Error 503: Service Unavailable';
+        $this->pageTitle = 'Vegan Alimentos - Em Desenvolvimento';
         $this->_response->setHttpResponseCode(503);
         $this->_response->setBody($this->_renderPage('503.phtml'));
         return $this->_response;
